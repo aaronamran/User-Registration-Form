@@ -1,24 +1,27 @@
+// JavaScript source code file
 
-
+// Wait for the DOM to be fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', function () {
-    const registrationForm = document.getElementById('registration-form');
-    const enableDarkMode = document.getElementById('enable-dark-mode');
-    let darkModeEnabled = false;
+    // Get references to HTML elements
+    const registrationForm = document.getElementById('registration-form'); // Registration form element
+    const enableDarkMode = document.getElementById('enable-dark-mode'); // Dark mode toggle button
+    let darkModeEnabled = false; // Variable to track the dark mode state
 
+    // Event listener for form submission
     registrationForm.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the form from submitting by default
 
         // Get form input fields
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const passwordInput = document.getElementById('password');
-        const confirmPasswordInput = document.getElementById('confirm-password');
+        const nameInput = document.getElementById('name'); // Name input field
+        const emailInput = document.getElementById('email'); // Email input field
+        const passwordInput = document.getElementById('password'); // Password input field
+        const confirmPasswordInput = document.getElementById('confirm-password'); // Confirm password input field
 
         // Get error message elements
-        const nameError = document.getElementById('name-error');
-        const emailError = document.getElementById('email-error');
-        const passwordError = document.getElementById('password-error');
-        const confirmPasswordError = document.getElementById('confirm-password-error');
+        const nameError = document.getElementById('name-error'); // Name error message element
+        const emailError = document.getElementById('email-error'); // Email error message element
+        const passwordError = document.getElementById('password-error'); // Password error message element
+        const confirmPasswordError = document.getElementById('confirm-password-error'); // Confirm password error message element
 
         // Reset error messages
         nameError.textContent = '';
@@ -57,14 +60,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Event listener for toggling dark mode
     enableDarkMode.addEventListener('click', function () {
         if (darkModeEnabled) {
+            // Disable dark mode
             document.body.classList.remove('dark-mode');
             enableDarkMode.textContent = 'Enable Dark Mode';
         } else {
+            // Enable dark mode
             document.body.classList.add('dark-mode');
             enableDarkMode.textContent = 'Enable Light Mode';
         }
-        darkModeEnabled = !darkModeEnabled;
+        darkModeEnabled = !darkModeEnabled; // Toggle dark mode state
     });
 });
