@@ -58,7 +58,7 @@ If you'd like to contribute to this project, feel free to open issues or submit 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
 
 ---
 
