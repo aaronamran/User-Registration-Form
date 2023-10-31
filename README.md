@@ -62,4 +62,4 @@ This project is licensed under the [MIT License](https://opensource.org/license/
 
 ---
 
-**Disclaimer:** This is a simple example of a user registration form and is for educational purposes. It may not cover all security and validation considerations required for a production-ready system. Make sure to implement proper server-side validation and security measures in a real-world application.
+**Disclaimer:** This is a simple example of a user registration form and is for educational purposes. It may not cover all security and validation considerations required for a production-ready system.
